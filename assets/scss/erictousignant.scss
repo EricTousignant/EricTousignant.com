@@ -1,0 +1,161 @@
+/*! EricTousignant.com */
+
+
+// Load normalize.css
+@import '_normalize';
+
+
+// Extend normalize by adjusting the border box!
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+
+@import '_fonticons';
+
+
+html { font-size: 16px; }
+
+html, body, .wrapper {
+    min-height: 100vh;
+}
+
+body {
+    background: #EEE url(file:///C:/Users/e_tousignant/ETcom/assets/img/bg_960.jpg) center no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    font: 300 1rem/1.5 'Open Sans', sans-serif;
+    min-width: 320px;
+}
+
+a {
+    color: inherit;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.card {
+    background: #FFF;
+    margin: 0 auto;
+    padding: 1.5rem;
+    position: relative;
+    text-align: justify;
+    width: 20rem;
+
+    header {
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+}
+
+.card {
+    background: #FFF;
+    background-clip: padding-box;
+    border: 1rem solid rgba(255,255,255,.2);
+    //border-radius: 2rem;
+    box-sizing: content-box;
+}
+
+.name {
+    font: 300 3rem/1 'Open Sans Condensed', sans-serif;
+    margin: 0;
+}
+
+.photo {
+    position: absolute;
+    top: 0; right: 0;
+    width: 3rem; height: auto;
+}
+
+p {
+    margin: 2rem 0;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    list-style: none;
+    margin: 1rem 0 0;
+    margin: 1.5rem 0 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        //flex: 1 1 auto;
+        margin: 0 1px 0 2px;
+    }
+
+    a {
+        display: block;
+        line-height: 3rem;
+        height: 3rem;
+        width: 3rem;
+        background: #EEE;
+        text-align: center;
+
+        &:hover {
+            background: #1B95E0;
+            background: #F60;
+            color: #FFF;
+        }
+
+        &.linkedin:hover {
+            background: #0077B5;
+        }
+
+        &.twitter:hover {
+            background: #55ACEE;
+        }
+
+        &.stack-overflow:hover {
+            background: #f69c55;
+        }
+
+        &.github:hover {
+            background: #369;
+        }
+    }
+}
+
+
+// iPad and high resolution tablets
+@media  only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-device-width: 768px) and (-o-min-device-pixel-ratio: 20/10),
+        only screen and (min-device-width: 768px) and (min-resolution: 200dpi)
+{
+    html { font-size: 20px; }
+}
+
+// iPhone 5 and small phones
+@media  only screen and (max-width: 350px) and (orientation: portrait),
+        only screen and (max-height: 350px) and (orientation: landscape) {
+    html { font-size: 12px; }
+}
+
+// iPhone 6 and medium phones
+@media  only screen and (min-width: 350px) and (max-width: 400px) and (orientation: portrait),
+        only screen and (min-height: 350px) and (max-height: 400px) and (orientation: landscape) {
+    html { font-size: 13px; }
+}
+
+// iPhone 6s and large phones
+@media  only screen and (min-width: 400px) and (max-width: 450px) and (orientation: portrait),
+        only screen and (min-height: 400px) and (max-height: 450px) and (orientation: landscape) {
+    html { font-size: 14px; }
+}
+
+// iPhone 6s and large phones
+@media  only screen and (min-width: 450px) and (max-width: 650px) and (orientation: portrait),
+        only screen and (min-height: 450px) and (max-height: 650px) and (orientation: landscape) {
+    html { font-size: 15px; }
+}
